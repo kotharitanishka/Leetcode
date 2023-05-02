@@ -1,6 +1,5 @@
 class Solution:
     def arraySign(self, nums: List[int]) -> int:
-        n = len(nums)
         n = 0
         z = 0
         ans = 0
@@ -14,7 +13,7 @@ class Solution:
             ans = 0
         elif (n % 2 == 0):
             ans = 1
-        elif(n %2 != 0):
+        else:
             ans = -1
         
         print(ans)
