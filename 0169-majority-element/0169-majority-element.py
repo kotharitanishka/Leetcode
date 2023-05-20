@@ -5,13 +5,13 @@ class Solution:
         maj = 0
         for num in nums:
             if num in d :
-                d[num] +=1
+                d[num] += 1
             else:
                 d[num] = 1
         
+        m = max(d.values())
         for k , v in d.items() :
-            if v > m:
-                m = v
-                maj = k
+            if v == m :
+                return k
             
-        return maj
+        # return maj
